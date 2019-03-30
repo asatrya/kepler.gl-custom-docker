@@ -178,7 +178,7 @@ class App extends Component {
           {
             info: {
               label: 'Bandung',
-              id: 'kelurahan-bandung'
+              id: 'pileg-pilgub-bandung'
             },
             data: Processors.processGeojson(dataGeojson)
           }

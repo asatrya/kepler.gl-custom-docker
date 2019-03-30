@@ -7,7 +7,7 @@
 				  "id": "ho20x6",
 				  "type": "geojson",
 				  "config": {
-					"dataId": "kelurahan-bandung",
+					"dataId": "pileg-pilgub-bandung",
 					"label": "pileg_2014",
 					"color": [
 					  23,
@@ -88,7 +88,7 @@
 				  "id": "172mv73",
 				  "type": "geojson",
 				  "config": {
-					"dataId": "kelurahan-bandung",
+					"dataId": "pileg-pilgub-bandung",
 					"label": "pilgub_2018",
 					"color": [
 					  77,
@@ -169,7 +169,7 @@
 			"interactionConfig": {
 				"tooltip": {
 				  "fieldsToShow": {
-					"kelurahan-bandung": [
+					"pileg-pilgub-bandung": [
 					  "kokab_nama",
 					  "kecamatan_nama",
 					  "kelurahan_nama",
