@@ -42,8 +42,8 @@ const KeplerGl = require('kepler.gl/components').injectComponents([
 
 // Sample data
 /* eslint-disable no-unused-vars */
-import dataGeojson from './data/sample-data.json';
-import configJson from './data/sample-config.json';
+// import dataGeojson from './data/sample-data.json';
+// import configJson from './data/sample-config.json';
 import {updateVisData, addDataToMap, addNotification} from 'kepler.gl/actions';
 import Processors from 'kepler.gl/processors';
 /* eslint-enable no-unused-vars */
