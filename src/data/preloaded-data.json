@@ -7,7 +7,7 @@
     "description": "Hasil pemilu 2014 dan pilgub 2018 di Kota Bandung.",
     "size": 5946,
     "visible": true,
-    "dataUrl": "https://raw.githubusercontent.com/asatrya/docker-kepler-demo/master/src/data/data.json",
+    "dataUrl": "https://raw.githubusercontent.com/asatrya/docker-kepler-demo/master/src/data/sample-data.json",
     "configUrl": "https://raw.githubusercontent.com/asatrya/docker-kepler-demo/master/src/data/sample-config.json"
   }
 ]
