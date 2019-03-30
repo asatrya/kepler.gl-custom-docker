@@ -46,6 +46,10 @@ Of course you can change the map and config file as your requirements.
 Run this command from the root project folder
 
 ```bash
+# development
+$ docker-compose -f docker-compose.dev.yml up -d
+
+# production
 $ docker-compose up -d
 ```
 
