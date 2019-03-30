@@ -42,10 +42,8 @@ const KeplerGl = require('kepler.gl/components').injectComponents([
 
 // Sample data
 /* eslint-disable no-unused-vars */
-import sampleTripData from './data/sample-trip-data';
-import sampleGeojson from './data/sample-geojson.json';
-import sampleH3Data from './data/sample-hex-id-csv';
-import sampleIconCsv, {config as savedMapConfig} from './data/sample-icon-csv';
+import dataGeojson from './data/sample-data.json';
+import configJson from './data/sample-config.json';
 import {updateVisData, addDataToMap, addNotification} from 'kepler.gl/actions';
 import Processors from 'kepler.gl/processors';
 /* eslint-enable no-unused-vars */
@@ -120,7 +118,7 @@ class App extends Component {
     }
 
     // load sample data
-    // this._loadSampleData();
+    this._loadSampleData();
 
     // Notifications
     // this._loadMockNotifications();
@@ -173,75 +171,22 @@ class App extends Component {
   }
 
   _loadSampleData() {
-    this.props.dispatch(
-      updateVisData(
-        // datasets
-        {
-          info: {
-            label: 'Sample Taxi Trips in New York City',
-            id: 'test_trip_data'
-          },
-          data: sampleTripData
-        },
-        // option
-        {
-          centerMap: true,
-          readOnly: false
-        },
-        // config
-        {
-          filters: [
-            {
-              id: 'me',
-              dataId: 'test_trip_data',
-              name: 'tpep_pickup_datetime',
-              type: 'timeRange',
-              enlarged: true
-            }
-          ]
-        }
-      )
-    );
-
-    // load icon data and config and process csv file
+    // load data and config
     this.props.dispatch(
       addDataToMap({
         datasets: [
           {
             info: {
-              label: 'Icon Data',
-              id: 'test_icon_data'
+              label: 'Bandung',
+              id: 'kelurahan-bandung'
             },
-            data: Processors.processCsvData(sampleIconCsv)
+            data: Processors.processGeojson(dataGeojson)
           }
         ],
         options: {
-          centerMap: false
+          centerMap: true
         },
-        config: savedMapConfig
-      })
-    );
-
-    // load geojson
-    this.props.dispatch(
-      updateVisData({
-        info: {label: 'SF Zip Geo'},
-        data: Processors.processGeojson(sampleGeojson)
-      })
-    );
-
-    // load h3 hexagon
-    this.props.dispatch(
-      addDataToMap({
-        datasets: [
-          {
-            info: {
-              label: 'H3 Hexagons V2',
-              id: 'h3-hex-id'
-            },
-            data: Processors.processCsvData(sampleH3Data)
-          }
-        ]
+        config: configJson
       })
     );
   }

@@ -1,0 +1,192 @@
+{
+	"config": {
+		"visState": {
+			"filters": [],
+			"layers": [
+				{
+				  "id": "ho20x6",
+				  "type": "geojson",
+				  "config": {
+					"dataId": "kelurahan-bandung",
+					"label": "pileg_2014",
+					"color": [
+					  23,
+					  184,
+					  190
+					],
+					"columns": {
+					  "geojson": "_geojson"
+					},
+					"isVisible": true,
+					"visConfig": {
+					  "opacity": 0.8,
+					  "thickness": 0.5,
+					  "colorRange": {
+						"name": "Global Warming",
+						"type": "sequential",
+						"category": "Uber",
+						"colors": [
+						  "#5A1846",
+						  "#900C3F",
+						  "#C70039",
+						  "#E3611C",
+						  "#F1920E",
+						  "#FFC300"
+						],
+						"reversed": false
+					  },
+					  "radius": 10,
+					  "sizeRange": [
+						0,
+						10
+					  ],
+					  "radiusRange": [
+						0,
+						50
+					  ],
+					  "heightRange": [
+						0,
+						500
+					  ],
+					  "elevationScale": 5,
+					  "hi-precision": false,
+					  "stroked": true,
+					  "filled": true,
+					  "enable3d": false,
+					  "wireframe": false
+					},
+					"textLabel": {
+					  "field": null,
+					  "color": [
+						255,
+						255,
+						255
+					  ],
+					  "size": 50,
+					  "offset": [
+						0,
+						0
+					  ],
+					  "anchor": "middle"
+					}
+				  },
+				  "visualChannels": {
+					"colorField": {
+					  "name": "p2014_persen",
+					  "type": "real"
+					},
+					"colorScale": "quantile",
+					"sizeField": null,
+					"sizeScale": "linear",
+					"heightField": null,
+					"heightScale": "linear",
+					"radiusField": null,
+					"radiusScale": "linear"
+				  }
+				},
+				{
+				  "id": "172mv73",
+				  "type": "geojson",
+				  "config": {
+					"dataId": "kelurahan-bandung",
+					"label": "pilgub_2018",
+					"color": [
+					  77,
+					  193,
+					  156
+					],
+					"columns": {
+					  "geojson": "_geojson"
+					},
+					"isVisible": true,
+					"visConfig": {
+					  "opacity": 0.8,
+					  "thickness": 0.5,
+					  "colorRange": {
+						"name": "ColorBrewer YlGnBu-6",
+						"type": "sequential",
+						"category": "ColorBrewer",
+						"colors": [
+						  "#ffffcc",
+						  "#c7e9b4",
+						  "#7fcdbb",
+						  "#41b6c4",
+						  "#2c7fb8",
+						  "#253494"
+						],
+						"reversed": false
+					  },
+					  "radius": 10,
+					  "sizeRange": [
+						0,
+						10
+					  ],
+					  "radiusRange": [
+						0,
+						50
+					  ],
+					  "heightRange": [
+						0,
+						500
+					  ],
+					  "elevationScale": 5,
+					  "hi-precision": false,
+					  "stroked": true,
+					  "filled": true,
+					  "enable3d": false,
+					  "wireframe": false
+					},
+					"textLabel": {
+					  "field": null,
+					  "color": [
+						255,
+						255,
+						255
+					  ],
+					  "size": 50,
+					  "offset": [
+						0,
+						0
+					  ],
+					  "anchor": "middle"
+					}
+				  },
+				  "visualChannels": {
+					"colorField": {
+					  "name": "p2018_persen",
+					  "type": "real"
+					},
+					"colorScale": "quantile",
+					"sizeField": null,
+					"sizeScale": "linear",
+					"heightField": null,
+					"heightScale": "linear",
+					"radiusField": null,
+					"radiusScale": "linear"
+				  }
+				}
+			],
+			"interactionConfig": {
+				"tooltip": {
+				  "fieldsToShow": {
+					"kelurahan-bandung": [
+					  "kokab_nama",
+					  "kecamatan_nama",
+					  "kelurahan_nama",
+					  "p2014_suara",
+					  "p2014_persen",
+					  "p2018_suara_3",
+					  "p2018_persen"
+					]
+				  },
+				  "enabled": true
+				},
+				"brush": {
+				  "size": 0.5,
+				  "enabled": false
+				}
+			}
+		}
+	},
+	"version":"v1"
+}
