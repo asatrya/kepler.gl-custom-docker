@@ -114,7 +114,7 @@ class App extends Component {
   componentDidMount() {
     // delay zs to show the banner
     if (!window.localStorage.getItem(BannerKey)) {
-      window.setTimeout(this._showBanner, 3000);
+      //window.setTimeout(this._showBanner, 3000);
     }
 
     // load sample data
