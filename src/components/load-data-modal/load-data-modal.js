@@ -209,9 +209,9 @@ const TrySampleData = ({onClick}) => (
   <StyledTrySampleData className="try-sample-data">
     <StyledMapIcon className="demo-map-icon" />
     <div className="demo-map-title">
-      <div className="demo-map-label">No data ?</div>
+      <div className="demo-map-label">Preloaded data</div>
       <div className="demo-map-action" onClick={onClick}>
-        <span>Try sample data</span>
+        <span>Select data</span>
         <Icons.ArrowRight height="16px" />
       </div>
     </div>
