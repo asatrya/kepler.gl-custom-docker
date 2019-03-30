@@ -1,0 +1,20 @@
+version: '3'
+services:
+  kepler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tppw/kepler:1.0
+    networks:
+      - internal
+    volumes:
+      - ./src:/kepler-demo/src
+      - /kepler-demo/node_modules
+    env_file:
+      - .env
+    ports:
+      - 8080:80
+
+networks:
+  internal:
+    driver: bridge

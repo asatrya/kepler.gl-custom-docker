@@ -19,4 +19,4 @@ ENV PATH "$PATH:/kepler-demo/node_modules/.bin"
 EXPOSE 80
 
 # CMD [ "tail", "-f", "/dev/null" ]
-CMD ["webpack-dev-server", "--progress", "--port", "80", "--host", "0.0.0.0"]
+CMD ["webpack-dev-server", "--progress", "--hot", "--port", "80", "--host", "0.0.0.0"]
