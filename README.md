@@ -15,7 +15,7 @@ MapboxAccessToken=put-your-token-here
 You can configure the URL containing JSON file that define the list of preloaded maps in `src/constants/default-settings.js` line 30 by changing `MAP_CONFIG_URL` variable value.
 
 ```js
-export const MAP_CONFIG_URL = `https://raw.githubusercontent.com/asatrya/docker-kepler-demo/master/src/data/preloaded-data.json?nocache=${(new Date()).getTime()}`;
+export const MAP_CONFIG_URL = `https://raw.githubusercontent.com/asatrya/kepler.gl-custom-docker/master/src/data/preloaded-data.json?nocache=${(new Date()).getTime()}`;
 ```
 
 That file defines the list of maps when you select to load the *Preloaded Data* option from *Add Data* dialog.

@@ -27,7 +27,7 @@ export const MAP_URI = 'mapx/map?mapUrl=';
 /*
  * If you want to add more samples, feel free to edit the json file on github kepler.gl data repo
  */
-export const MAP_CONFIG_URL = `https://raw.githubusercontent.com/asatrya/docker-kepler-demo/master/src/data/preloaded-data.json?nocache=${(new Date()).getTime()}`;
+export const MAP_CONFIG_URL = `https://raw.githubusercontent.com/asatrya/kepler.gl-custom-docker/master/src/data/preloaded-data.json?nocache=${(new Date()).getTime()}`;
 
 /**
  * I know this is already defined in Kepler core but it should be defined here
